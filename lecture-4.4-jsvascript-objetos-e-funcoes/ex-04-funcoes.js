@@ -4,17 +4,28 @@
 
 //Valor esperado no retorno da função: Fernanda .
 
-function maiorPalavra(palavras) {
-  let maiorPalavra = palavras[0];
-  for (let indice in palavras) {
-    if (maiorPalavra.length < palavras[indice].length) {
-      maiorPalavra = palavras[indice];
+// function maiorPalavra(palavras) {
+//   let maiorPalavra = palavras[0];
+//   for (let indice in palavras) {
+//     if (maiorPalavra.length < palavras[indice].length) {
+//       maiorPalavra = palavras[indice];
+//     }
+//   }
+//   return maiorPalavra;
+// }
+// console.log(maiorPalavra(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])); //Fernanda
+
+  // OU
+
+  function maiorTamanhoDoNome (nomes) {
+    let maiorNome = nomes[0];
+    for (let indice in nomes) {
+
+      if (maiorNome.length < nomes[indice].length) {
+        maiorNome = nomes[indice];
+      }
     }
+    return maiorNome;
   }
-  return maiorPalavra;
-}
-console.log(maiorPalavra(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])); //Fernanda
-
-
-
-
+  console.log(maiorTamanhoDoNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+  
